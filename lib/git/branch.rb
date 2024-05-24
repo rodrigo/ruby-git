@@ -50,12 +50,12 @@ module Git
       check_if_create
     end
 
-    def delete
-      @base.lib.branch_delete(@name)
+    def delete(name=nil)
+      @base.lib.branch_delete(name || @name)
     end
 
-    def rename
-      @base.lib.branch_rename(@name)
+    def rename(name)
+      @base.lib.branch_rename(name)
     end
 
     def current
