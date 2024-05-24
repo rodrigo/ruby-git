@@ -54,6 +54,10 @@ module Git
       @base.lib.branch_delete(@name)
     end
 
+    def rename
+      @base.lib.branch_rename(@name)
+    end
+
     def current
       determine_current
     end

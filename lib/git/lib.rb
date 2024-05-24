@@ -856,6 +856,10 @@ module Git
       command('branch', '-D', branch)
     end
 
+    def branch_rename(branch)
+      command('branch', '-m', branch)
+    end
+
     # Runs checkout command to checkout or create branch
     #
     # accepts options:
